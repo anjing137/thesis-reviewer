@@ -17,66 +17,67 @@
 ## 目录结构
 
 ```
-thesis-reviewer/
-├── README.md                    # 本文件
-├── thesis_reviewer/            # Python项目代码
-│   ├── pipeline_v4.py          # 核心流程（v4混合架构）
-│   ├── parser/                 # PDF/DOCX解析
-│   ├── scoring/                # 评分规则
+thesis-reviewer/                    # 整个仓库拷贝到 ~/.claude/skills/
+├── SKILL.md                       # Claude Code Skill 配置（AI读取此文件）
+├── thesis_reviewer/                # Python 项目代码
+│   ├── pipeline_v4.py             # 核心流程（v4混合架构）
+│   ├── parser/                    # PDF/DOCX解析
+│   ├── scoring/                   # 评分规则
 │   └── ...
-├── skills/
-│   └── thesis-reviewer/
-│       ├── SKILL.md           # Claude Code Skill配置
-│       ├── agents/             # 各维度评审Agent
-│       └── README.md          # 版权声明
+├── requirements.txt               # Python依赖
+└── README.md                     # 本文件
 ```
 
 ---
 
-## 快速开始
+## 安装部署
 
-### 1. 克隆仓库
+### 方式一：直接部署到 Claude Code Skills（推荐）
+
+```bash
+# 克隆到 skills 目录
+git clone https://github.com/anjing137/thesis-reviewer.git ~/.claude/skills/thesis-reviewer
+
+# 安装依赖
+cd ~/.claude/skills/thesis-reviewer
+pip install -r requirements.txt
+```
+
+### 方式二：克隆到其他位置
 
 ```bash
 git clone https://github.com/anjing137/thesis-reviewer.git
 cd thesis-reviewer
-```
-
-### 2. 安装依赖
-
-```bash
 pip install -r requirements.txt
 ```
 
-### 3. 运行评审
+---
+
+## 使用方式
+
+在 Claude Code 中直接说：
+
+```
+评审我的论文：/path/to/论文.pdf
+```
+
+AI 将自动：
+1. 调用 Python 解析论文
+2. 生成评价 Prompt
+3. 进行深度评价
+4. 输出结构化评审报告
+
+或手动运行：
 
 ```bash
 python -c "
 from thesis_reviewer.pipeline_v4 import ReviewPipelineV4
-import os
 
 pipeline = ReviewPipelineV4()
-result = pipeline.run('你的论文.pdf')
-
-os.makedirs('output', exist_ok=True)
-pipeline.save_outputs(result, 'output', '论文评审')
-print('评审Prompt已保存')
+result = pipeline.run('论文.pdf')
+prompt = pipeline.evaluation_prompt
+print(prompt[:2000])  # 显示前2000字
 "
-```
-
-### 4. LLM评价
-
-1. 查看 `output/论文评审_评价Prompt.md`
-2. 将内容发送给 LLM（如 ChatGPT、Claude）
-3. 获取 LLM 返回的 JSON 评价结果
-
-### 5. 生成最终报告
-
-```python
-# 继续上面的Python环境，粘贴LLM返回的JSON
-llm_json = '''粘贴JSON'''
-report = pipeline.generate_report(result, llm_json)
-print(report)
 ```
 
 ---
