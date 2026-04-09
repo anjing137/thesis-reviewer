@@ -295,10 +295,14 @@ def generate_llm_evaluation_prompt(
     lines.append(modules.chapter_summary())
     lines.append("\n\n")
 
-    # === 章节内容摘要 ===
+    # === 章节内容摘要（前2000字+后1000字）===
     lines.append("## 章节内容摘要\n\n")
     for ch in modules.chapters:
-        content_preview = ch.content[:800] + "..." if len(ch.content) > 800 else ch.content
+        content = ch.content
+        if len(content) > 3000:
+            content_preview = content[:2000] + "\n\n...[省略中间部分]...\n\n" + content[-1000:]
+        else:
+            content_preview = content
         lines.append(f"### 第{ch.number}章 {ch.title}\n")
         lines.append(content_preview)
         lines.append("\n\n")
