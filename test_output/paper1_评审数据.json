@@ -1,0 +1,50 @@
+{
+  "title": "睢县庭院经济建设的影响因素研究",
+  "paper_type": "问卷调查实证型",
+  "reference_stats": {
+    "total": 58,
+    "chinese": 53,
+    "foreign": 5,
+    "journals": 34,
+    "journal_ratio": 0.5862068965517241,
+    "recent_5yr": 20,
+    "recent_5yr_ratio": 0.3448275862068966
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "title": "引言",
+      "char_count": 8803
+    },
+    {
+      "number": 2,
+      "title": "相关概念界定与理论基础",
+      "char_count": 2145
+    },
+    {
+      "number": 3,
+      "title": "睢县庭院经济经营及资源利用现状",
+      "char_count": 6260
+    },
+    {
+      "number": 4,
+      "title": "睢县庭院经济建设的实证分析",
+      "char_count": 7462
+    },
+    {
+      "number": 5,
+      "title": "睢县庭院经济建设影响因素的 ISM 分析",
+      "char_count": 5035
+    },
+    {
+      "number": 6,
+      "title": "睢县庭院经济建设的提升路径设计与对策研究",
+      "char_count": 6406
+    },
+    {
+      "number": 7,
+      "title": "研究结论与展望",
+      "char_count": 14250
+    }
+  ]
+}

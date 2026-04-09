@@ -1,0 +1,348 @@
+{
+  "title": "河南省辉县农户农业购买保险需求影响因素研究",
+  "paper_type": "问卷调查实证型",
+  "scoring": {
+    "dimensions": [
+      {
+        "name": "研究问题",
+        "score": 4,
+        "max_score": 15,
+        "percentage": 26.666666666666668,
+        "grade": "F",
+        "sub_items": [
+          {
+            "name": "问题清晰度",
+            "score": 0,
+            "max": 5,
+            "passed": false,
+            "evidence": "未明确识别到研究问题",
+            "suggestion": "建议明确定义核心概念，表述具体研究问题"
+          },
+          {
+            "name": "理论意义",
+            "score": 2,
+            "max": 5,
+            "passed": false,
+            "evidence": "理论意义评估依据不足",
+            "suggestion": "建议加强文献对话，明确理论贡献"
+          },
+          {
+            "name": "实践价值",
+            "score": 2,
+            "max": 5,
+            "passed": false,
+            "evidence": "实践价值评估依据不足",
+            "suggestion": "建议加强实践意义的论证"
+          }
+        ],
+        "critical_issues": [
+          "ScoreResult(score=0, max_score=5, passed=False, rule_name='问题清晰度', evidence='未明确识别到研究问题', suggestion='建议明确定义核心概念，表述具体研究问题')",
+          "ScoreResult(score=2, max_score=5, passed=False, rule_name='理论意义', evidence='理论意义评估依据不足', suggestion='建议加强文献对话，明确理论贡献')",
+          "ScoreResult(score=2, max_score=5, passed=False, rule_name='实践价值', evidence='实践价值评估依据不足', suggestion='建议加强实践意义的论证')"
+        ],
+        "suggestions": [
+          "建议明确定义核心概念，表述具体研究问题",
+          "建议加强文献对话，明确理论贡献",
+          "建议加强实践意义的论证"
+        ]
+      },
+      {
+        "name": "方法论严谨性",
+        "score": 8.333333333333334,
+        "max_score": 25,
+        "percentage": 33.333333333333336,
+        "grade": "F",
+        "sub_items": [
+          {
+            "name": "方法匹配度",
+            "score": 0.8333333333333334,
+            "max": 25,
+            "passed": false,
+            "evidence": "未识别到具体研究方法",
+            "suggestion": "方法匹配度不足"
+          },
+          {
+            "name": "数据质量",
+            "score": 0.8333333333333334,
+            "max": 25,
+            "passed": false,
+            "evidence": "未获取到数据信息",
+            "suggestion": "数据质量需提高"
+          },
+          {
+            "name": "模型规范性",
+            "score": 1.6666666666666667,
+            "max": 25,
+            "passed": false,
+            "evidence": "缺乏详细的模型设定信息",
+            "suggestion": "模型规范性不足"
+          },
+          {
+            "name": "稳健性检验",
+            "score": 2.5,
+            "max": 25,
+            "passed": false,
+            "evidence": "提及稳健性但细节不足；",
+            "suggestion": "缺乏稳健性检验"
+          },
+          {
+            "name": "结果解释",
+            "score": 2.5,
+            "max": 25,
+            "passed": false,
+            "evidence": "结果解释需深化",
+            "suggestion": "结果解释不充分"
+          }
+        ],
+        "critical_issues": [
+          "ScoreResult(score=1.0, max_score=6, passed=False, rule_name='方法匹配度', evidence='未识别到具体研究方法', suggestion='方法匹配度不足')",
+          "ScoreResult(score=1.0, max_score=6, passed=False, rule_name='数据质量', evidence='未获取到数据信息', suggestion='数据质量需提高')",
+          "ScoreResult(score=2.0, max_score=6, passed=False, rule_name='模型规范性', evidence='缺乏详细的模型设定信息', suggestion='模型规范性不足')",
+          "ScoreResult(score=3.0, max_score=6, passed=False, rule_name='稳健性检验', evidence='提及稳健性但细节不足；', suggestion='缺乏稳健性检验')",
+          "ScoreResult(score=3.0, max_score=6, passed=False, rule_name='结果解释', evidence='结果解释需深化', suggestion='结果解释不充分')"
+        ],
+        "suggestions": [
+          "方法匹配度不足",
+          "数据质量需提高",
+          "模型规范性不足",
+          "缺乏稳健性检验",
+          "结果解释不充分"
+        ]
+      },
+      {
+        "name": "结果与结论",
+        "score": 5,
+        "max_score": 20,
+        "percentage": 25.0,
+        "grade": "F",
+        "sub_items": [
+          {
+            "name": "结论有效性",
+            "score": 0,
+            "max": 7,
+            "passed": false,
+            "evidence": "未明确识别到结论",
+            "suggestion": "建议加强结论的有效性论证"
+          },
+          {
+            "name": "证据支撑",
+            "score": 3,
+            "max": 7,
+            "passed": false,
+            "evidence": "证据支撑评估依据不足",
+            "suggestion": "建议用更多数据支撑结论"
+          },
+          {
+            "name": "局限性说明",
+            "score": 2,
+            "max": 6,
+            "passed": false,
+            "evidence": "未明确讨论研究局限【建议改进】",
+            "suggestion": "建议明确讨论研究局限"
+          }
+        ],
+        "critical_issues": [
+          "ScoreResult(score=0, max_score=7, passed=False, rule_name='结论有效性', evidence='未明确识别到结论', suggestion='建议加强结论的有效性论证')",
+          "ScoreResult(score=3, max_score=7, passed=False, rule_name='证据支撑', evidence='证据支撑评估依据不足', suggestion='建议用更多数据支撑结论')",
+          "ScoreResult(score=2, max_score=6, passed=False, rule_name='局限性说明', evidence='未明确讨论研究局限【建议改进】', suggestion='建议明确讨论研究局限')"
+        ],
+        "suggestions": [
+          "建议加强结论的有效性论证",
+          "建议用更多数据支撑结论",
+          "建议明确讨论研究局限"
+        ]
+      },
+      {
+        "name": "创新性",
+        "score": 5,
+        "max_score": 15,
+        "percentage": 33.33333333333333,
+        "grade": "F",
+        "sub_items": [
+          {
+            "name": "选题创新",
+            "score": 2,
+            "max": 5,
+            "passed": false,
+            "evidence": "选题创新性评估依据不足",
+            "suggestion": "建议寻找更具创新性的研究角度"
+          },
+          {
+            "name": "方法创新",
+            "score": 1,
+            "max": 5,
+            "passed": false,
+            "evidence": "未明确识别研究方法",
+            "suggestion": "建议尝试新方法或方法组合"
+          },
+          {
+            "name": "数据/应用创新",
+            "score": 2,
+            "max": 5,
+            "passed": false,
+            "evidence": "数据/应用创新性一般",
+            "suggestion": "建议使用新数据源或新应用场景"
+          }
+        ],
+        "critical_issues": [
+          "ScoreResult(score=2, max_score=5, passed=False, rule_name='选题创新', evidence='选题创新性评估依据不足', suggestion='建议寻找更具创新性的研究角度')",
+          "ScoreResult(score=1, max_score=5, passed=False, rule_name='方法创新', evidence='未明确识别研究方法', suggestion='建议尝试新方法或方法组合')",
+          "ScoreResult(score=2, max_score=5, passed=False, rule_name='数据/应用创新', evidence='数据/应用创新性一般', suggestion='建议使用新数据源或新应用场景')"
+        ],
+        "suggestions": [
+          "建议寻找更具创新性的研究角度",
+          "建议尝试新方法或方法组合",
+          "建议使用新数据源或新应用场景"
+        ]
+      },
+      {
+        "name": "结构与逻辑",
+        "score": 8,
+        "max_score": 10,
+        "percentage": 80.0,
+        "grade": "B",
+        "sub_items": [
+          {
+            "name": "章节结构",
+            "score": 4,
+            "max": 4,
+            "passed": true,
+            "evidence": "论文结构完整；",
+            "suggestion": ""
+          },
+          {
+            "name": "逻辑流程",
+            "score": 2,
+            "max": 3,
+            "passed": true,
+            "evidence": "逻辑流程评估依据不足",
+            "suggestion": ""
+          },
+          {
+            "name": "部分协调",
+            "score": 2,
+            "max": 3,
+            "passed": true,
+            "evidence": "章节协调性基本合格",
+            "suggestion": ""
+          }
+        ],
+        "critical_issues": [],
+        "suggestions": []
+      },
+      {
+        "name": "表达质量",
+        "score": 7,
+        "max_score": 10,
+        "percentage": 70.0,
+        "grade": "C",
+        "sub_items": [
+          {
+            "name": "学术语言",
+            "score": 3,
+            "max": 4,
+            "passed": true,
+            "evidence": "学术语言基本规范",
+            "suggestion": ""
+          },
+          {
+            "name": "清晰简洁",
+            "score": 2,
+            "max": 3,
+            "passed": true,
+            "evidence": "表达清晰度基本合格",
+            "suggestion": ""
+          },
+          {
+            "name": "引用规范",
+            "score": 2,
+            "max": 3,
+            "passed": true,
+            "evidence": "参考文献格式规范；",
+            "suggestion": ""
+          }
+        ],
+        "critical_issues": [],
+        "suggestions": []
+      },
+      {
+        "name": "参考文献与规范",
+        "score": 4.3,
+        "max_score": 5,
+        "percentage": 86.0,
+        "grade": "B",
+        "sub_items": [
+          {
+            "name": "文献数量",
+            "score": 1.5,
+            "max": 1.5,
+            "passed": true,
+            "evidence": "参考文献总数：74篇（满足要求≥30篇）",
+            "suggestion": ""
+          },
+          {
+            "name": "外文文献",
+            "score": 1.5,
+            "max": 1.5,
+            "passed": true,
+            "evidence": "外文文献：21篇（满足要求≥10篇）",
+            "suggestion": ""
+          },
+          {
+            "name": "期刊占比",
+            "score": 1.0,
+            "max": 1.0,
+            "passed": true,
+            "evidence": "期刊文献占比：86%（满足要求≥50%）",
+            "suggestion": ""
+          },
+          {
+            "name": "近五年文献",
+            "score": 0.3,
+            "max": 1.0,
+            "passed": false,
+            "evidence": "近五年文献占比：19%（建议增加近期文献）",
+            "suggestion": "建议增加近五年文献占比"
+          }
+        ],
+        "critical_issues": [
+          "ScoreResult(score=0.3, max_score=1.0, passed=False, rule_name='近五年文献', evidence='近五年文献占比：19%（建议增加近期文献）', suggestion='建议增加近五年文献占比')"
+        ],
+        "suggestions": [
+          "建议增加近五年文献占比"
+        ]
+      }
+    ],
+    "total_score": 41.63333333333333,
+    "max_total": 100,
+    "percentage": 41.63333333333333,
+    "critical_count": 15,
+    "paper_type": "问卷调查实证型",
+    "suggestions": [
+      "数据质量需提高",
+      "模型规范性不足",
+      "方法匹配度不足",
+      "建议尝试新方法或方法组合",
+      "建议使用新数据源或新应用场景",
+      "建议加强文献对话，明确理论贡献",
+      "建议用更多数据支撑结论",
+      "建议寻找更具创新性的研究角度",
+      "结果解释不充分",
+      "建议增加近五年文献占比",
+      "缺乏稳健性检验",
+      "建议加强实践意义的论证",
+      "建议明确定义核心概念，表述具体研究问题",
+      "建议明确讨论研究局限",
+      "建议加强结论的有效性论证"
+    ]
+  },
+  "references": {
+    "total": 74,
+    "chinese": 53,
+    "foreign": 21,
+    "journals": 64,
+    "journal_ratio": 0.8648648648648649,
+    "recent_5yr": 14,
+    "recent_5yr_ratio": 0.1891891891891892
+  }
+}

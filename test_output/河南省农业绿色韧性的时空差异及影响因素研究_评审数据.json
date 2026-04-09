@@ -1,0 +1,18 @@
+{
+  "title": "河南省农业绿色韧性的时空差异及影响因素研究",
+  "paper_type": "实证经济学型",
+  "reference_stats": {
+    "total": 58,
+    "chinese": 37,
+    "foreign": 21,
+    "journals": 0,
+    "journal_ratio": 0,
+    "recent_5yr": 0,
+    "recent_5yr_ratio": 0
+  },
+  "methods": ["熵值法", "核密度估计", "地理探测器", "Dagum基尼系数", "回归分析", "面板数据", "稳健性检验"],
+  "tables": 8,
+  "figures": 11,
+  "time_span": "2012-2023年",
+  "chapters": []
+}
