@@ -481,28 +481,64 @@ DIMENSION_CHAPTER_MAPPING = {
 
 ## 使用方式
 
-### Python API
-
-```python
-from thesis_reviewer import review_pipeline
-
-result = review_pipeline(
-    file_path="论文.pdf",
-    api_key="your-api-key",
-    output_dir="./output/",
-    review_mode="full"  # full/format/quick/method
-)
-
-print(result.report)           # 评审报告
-print(result.scoring_detail)   # 评分详情
-print(result.paper_type)       # 论文类型
-```
-
-### CLI
+### 第一步：克隆项目
 
 ```bash
-python main.py 论文.pdf --api-key YOUR_API_KEY -o 输出目录/
+git clone https://github.com/anjing137/thesis-reviewer.git
+cd thesis-reviewer
 ```
+
+### 第二步：安装依赖
+
+```bash
+pip install -r requirements.txt
+```
+
+### 第三步：运行评审
+
+```bash
+python -c "
+from thesis_reviewer.pipeline_v4 import ReviewPipelineV4
+import os
+
+pipeline = ReviewPipelineV4()
+result = pipeline.run('你的论文.pdf')
+
+# 保存Prompt
+os.makedirs('output', exist_ok=True)
+prefix = '论文评审'
+pipeline.save_outputs(result, 'output', prefix)
+print('评审Prompt已保存到 output/')
+"
+```
+
+### 第四步：LLM评价
+
+1. 查看 `output/论文评审_评价Prompt.md`
+2. 将内容发送给 LLM 进行评价
+3. 将 LLM 返回的 JSON 粘贴回 Python 解析生成报告
+
+### 第五步：生成最终报告
+
+```python
+# 在上一步的Python环境中继续
+llm_json = '''粘贴LLM返回的JSON'''
+report = pipeline.generate_report(result, llm_json)
+pipeline.save_outputs(result, 'output', '论文评审')
+print(report)
+```
+
+---
+
+### Skill 使用说明
+
+当你调用 `/thesis-reviewer` 时，本 Skill 会引导你完成以下流程：
+
+1. **准备论文文件**（PDF 或 DOCX）
+2. **运行 Python 统计**
+3. **获取 LLM 评价 Prompt**
+4. **粘贴 LLM 评价结果**
+5. **生成最终评审报告**
 
 ### 评审模式
 

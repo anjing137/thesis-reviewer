@@ -35,25 +35,48 @@ thesis-reviewer/
 
 ## 快速开始
 
-### 方式一：在Claude Code中使用（推荐）
+### 1. 克隆仓库
 
-1. 克隆本仓库到本地
-2. 将 `skills/thesis-reviewer/` 目录拷贝到 Claude Code 的 skills 目录：
-   ```bash
-   cp -r skills/thesis-reviewer ~/.claude/skills/
-   ```
-3. 在Claude Code中运行：
-   ```
-   /thesis-reviewer
-   ```
+```bash
+git clone https://github.com/anjing137/thesis-reviewer.git
+cd thesis-reviewer
+```
 
-### 方式二：Python脚本直接调用
+### 2. 安装依赖
 
-```python
+```bash
+pip install -r requirements.txt
+```
+
+### 3. 运行评审
+
+```bash
+python -c "
 from thesis_reviewer.pipeline_v4 import ReviewPipelineV4
+import os
 
 pipeline = ReviewPipelineV4()
-result = pipeline.run("论文.pdf")
+result = pipeline.run('你的论文.pdf')
+
+os.makedirs('output', exist_ok=True)
+pipeline.save_outputs(result, 'output', '论文评审')
+print('评审Prompt已保存')
+"
+```
+
+### 4. LLM评价
+
+1. 查看 `output/论文评审_评价Prompt.md`
+2. 将内容发送给 LLM（如 ChatGPT、Claude）
+3. 获取 LLM 返回的 JSON 评价结果
+
+### 5. 生成最终报告
+
+```python
+# 继续上面的Python环境，粘贴LLM返回的JSON
+llm_json = '''粘贴JSON'''
+report = pipeline.generate_report(result, llm_json)
+print(report)
 ```
 
 ---
